@@ -5,7 +5,9 @@
   --basic-white: #ffffff;
   --basic-blue: #81b3d2;
   --basic-gray: #eeeeee;
-
+  --extra-black: rgba(255,255,255,0.9);
+  --extra-blue-hover: #669ec0;
+  --extra-blue-active: #5496bd;
   --special: #766357;
 }
 
@@ -79,10 +81,10 @@ img {
 .button {
   font: inherit;
   text-align: center;
-  color: var(--basic-white);
+  color: var(--basic-black);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-black);
+  background-color: var(--basic-white);
   border: none;
 }
 
@@ -103,4 +105,45 @@ img {
 
 .contacts-phone {
   color: inherit;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--extra-black);
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--extra-blue-hover);
 }
