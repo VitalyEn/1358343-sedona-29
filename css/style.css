@@ -9,8 +9,6 @@
   --extra-blue-hover: #669ec0;
   --extra-blue-active: #5496bd;
   --special: #766357;
-  --special-hover:#604e43;
-  --special-active:#503e33;
 }
 
 /* Global */
@@ -123,12 +121,6 @@ img {
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   text-decoration: none;
-  color: var(--basic-blue);
-}
-
-.footer-contacts a:active {
-  color: var(--basic-black);
-  opacity: 0.3;
 }
 
 .footer-social {
