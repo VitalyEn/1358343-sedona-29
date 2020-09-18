@@ -1,90 +1,97 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/logo.png" alt="Логотип Sedona">
-        </a>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и Видео</a>
-          </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo.png" alt="Логотип Sedona">
+      </a>
 
-    <main>
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Фото и Видео</a>
+        </li>
+        <li>
+          <a href="#">Карта штата</a>
+        </li>
+        <li>
+          <a href="hotels.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="container">
       <h1>Отели</h1>
-      <section>
+      <section class="filters">
         <h2>Фильтр</h2>
         <!--Здесь будет форма фильтра-->
       </section>
 
-      <section>
+      <section class="results">
         <h2>Результаты поиска</h2>
         <p>Найдено: 3</p>
         <div>
           <h3>Сортировка:</h3>
-          <ul>
-           <li>По цене</li>
-           <li>По типу</li>
-           <li>По рейтингу</li>
+          <ul class="sort-list">
+           <li class="sort-item">По цене</li>
+           <li class="sort-item">По типу</li>
+           <li class="sort-item">По рейтингу</li>
           </ul>
         </div>
-        <ul>
-          <li>
+        <ul class="result-list">
+          <li class="result-item">
             <h3>Amara Resort & Spa</h3>
-            <img src="img/Layer 21.png" alt="Amara Resort & Spa">
+            <img src="img/Amara.jpg" alt="Amara Resort & Spa">
             <p>Гостиницы от 4000 р.</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <button type="button" class="extra-button">Подробнее</button>
+            <button type="button" class="booking-button">Забронировать</button>
           </li>
-          <li>
+          <li class="result-item">
             <h3>Desert Quail Inn</h3>
-            <img src="img/Layer 89.png" alt="Desert Quail Inn">
+            <img src="img/Desertquail.jpg" alt="Desert Quail Inn">
             <p>Мотель от 3000 р.</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <button type="button" class="extra-button">Подробнее</button>
+            <button type="button" class="booking-button">Забронировать</button>
           </li>
-          <li>
+          <li class="result-item">
             <h3>Villas at Poco Diablo</h3>
-            <img src="img/Rectangle.png" alt="Villas at Poco Diablo">
+            <img src="img/Villas.jpg" alt="Villas at Poco Diablo">
             <p>Апартаменты от 2000 р.</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <button type="button" class="extra-button">Подробнее</button>
+            <button type="button" class="booking-button">Забронировать</button>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <a href="#">#VISITSEDONA</a><br>
-      <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+    <footer class="main-footer page-footer">
+      <section class="footer-contacts">
+        <a href="#">#VISITSEDONA</a><br>
+        <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </section>
+      <section class="footer-social">
       <ul>
-        <li><a href="twitter.com">twitter.com</a></li>
-        <li><a href="facebook.com">facebook.com</a></li>
-        <li><a href="youtube.com">youtube.com</a></li>
+        <li><a class="social-button" href="twitter.com">twitter.com</a></li>
+        <li><a class="social-button" href="facebook.com">facebook.com</a></li>
+        <li><a class="social-button" href="youtube.com">youtube.com</a></li>
       </ul>
+      </section>
+      <section class="footer-copyright">
       <p>Website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" alt="Логотип академии"></a>
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип академии"></a>
+      </section>
     </footer>
   </body>
 </html>
