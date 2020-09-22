@@ -5,6 +5,7 @@
   --basic-white: #ffffff;
   --basic-blue: #81b3d2;
   --basic-gray: #eeeeee;
+  --extra-gray: #888888;
   --extra-black: rgba(255,255,255,0.9);
   --extra-blue-hover: #669ec0;
   --extra-blue-active: #5496bd;
@@ -16,7 +17,7 @@
 /* Global */
 
 body {
-  min-width: 960px;
+  min-width: 1280px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -25,7 +26,6 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -39,9 +39,43 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+  background-color: var(--extra-gray);
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  background-color: var(--basic-white);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  justify-self: center;
+}
 /* Main navigation */
 
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .main-navigation {
+  display: grid;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -149,6 +183,8 @@ img {
 .main-footer {
   color: var(--basic-black);
   background-color: var(--extra-black);
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-contacts a {
