@@ -118,6 +118,11 @@ img {
   padding: 0 10px;
 }
 
+.sedona {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 /* Features */
 
 .features {
@@ -138,6 +143,9 @@ img {
   outline-offset: -5px;
 }
 
+.feature-item-picture {
+  display: flex;
+}
 .service-list {
     display: flex;
 }
@@ -257,9 +265,10 @@ img {
 }
 
 .footer-copyright {
-max-width: 150px;
-margin: 0;
-justify-self: center;
+  display: flex;
+  max-width: 200px;
+  margin: 0;
+  justify-content: space-between;
 }
 
 .footer-social ul {
