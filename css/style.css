@@ -122,12 +122,19 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
+
+.sedona p {
+  width: 100%;
+  text-align: center;
+}
+
 /* Features */
 
 .features {
   margin-bottom: 80px;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+
 }
 
 .feature-list {
@@ -139,8 +146,7 @@ img {
 .feature-item {
   text-align: center;
   width: 100%;
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
+  
 }
 
 .feature-item-picture {
@@ -159,6 +165,13 @@ img {
   line-height: 21px;
 }
 
+.feedback {
+  text-align: center;
+}
+
+.feedback .h2 {
+  font-weight: bold;
+}
 /* Button */
 
 .button {
@@ -170,20 +183,16 @@ img {
   background-color: var(--basic-white);
   border: none;
 }
-/*
-.button:hover,
-.button:focus,
-.button:active {
-  color: var(--special);
+
+.find-button {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  line-height: 26px;
+  text-align: center;
+  width: 568px;
+  height: 86px;
 }
 
-.button.disabled,
-.button:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--basic-black);
-}
-*/
 .extra-button {
   border: none;
   color: var(--basic-white);
