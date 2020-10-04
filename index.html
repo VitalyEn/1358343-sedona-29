@@ -22,6 +22,7 @@
           <li>
             <a href="#">Фото и Видео</a>
           </li>
+          <li></li>
           <li>
             <a href="#">Карта штата</a>
           </li>
@@ -34,22 +35,21 @@
     </header>
 
     <main class="container">
-      <h1>Sedona</h1>
+      <h1 class="visually-hidden">Sedona</h1>
       <section class="banner">
-        <h2>Welcome</h2>
-        <img src="img/welcome.png" width="456.65" height="350.88" alt="welcome">
+        <h2 class="visually-hidden">Welcome</h2>
+        <img class="welcome-sedona" src="img/welcome.png" width="456.65" height="350.88" alt="welcome">
         <img src="img/shape-4.svg" width="1200" height="57" alt="">
       </section>
       <section class="sedona">
-        <h2>Седона - небольшой городок в Аризоне,</h2>
-        <p class="h2">заслуживающий большего</p>
+        <p class="h2">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
         <p>Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="features">
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="feature-list">
           <li class="feature-item feature-item-picture">
-            <div>
+            <div class="feature-text">
             <h3>Настоящий городок</h3>
             <p>— №1 —</p>
             <p>Седона не атракцион для туристов, там течет своя жизнь</p>
@@ -59,7 +59,7 @@
             </div>
           </li>
           <li class="feature-item">
-            <h3>Сервисы</h3>
+            <h3 class="visually-hidden">Сервисы</h3>
             <ul class="service-list">
               <li class="service-item">
                 <img src="img/hotels.svg" width="75" height="72" alt="жилье">
@@ -82,34 +82,40 @@
             <div>
             <img src="img/diablobridge.jpg" width="800" height="256" alt="преимущество №2">
             </div>
-            <div>
+            <div class="feature-text">
             <h3>Мост дьявола</h3>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
-          <li class="feature-item small-item">
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature-item small-item">
-            <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item small-item">
-            <h3>Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>большинство едет в гранд каньон и толпится там</p>
+          <li class="feature-item">
+            <ul class="small-item-list">
+              <li class="small-item">
+                <h3>Небольшая площадь</h3>
+                <p>— №3 —</p>
+                <p>все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="small-item">
+                <h3>Красивая дорога</h3>
+                <p>— №4 —</p>
+                <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+              </li>
+              <li class="small-item">
+                <h3>Мало туристов</h3>
+                <p>— №5 —</p>
+                <p>большинство едет в гранд каньон и толпится там</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
       <section class="feedback">
-        <h2>Обратная связь</h2>
-        <p class="h2">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,</p>
-        <p>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <div class="feedback-text">
+         <p class="h2">Заинтересовались?</p>
+         <p>Укажите предполагаемые даты поездки,</p>
+         <p>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
         <a href="#" type="button" class="find-button">поиск гостиницы в седоне</a>
         <img src="img/map.jpg" width="1199" height="594" alt="карта">
       </section>
@@ -123,9 +129,27 @@
       </section>
       <section class="footer-social">
       <ul>
-        <li><a class="social-button" href="twitter.com">twitter.com</a></li>
-        <li><a class="social-button" href="facebook.com">facebook.com</a></li>
-        <li><a class="social-button" href="youtube.com">youtube.com</a></li>
+        <li><a class="social-button" href="twitter.com">
+          <span class="visually-hidden">twitter.com</span>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
+          </svg>
+        </a>
+        </li>
+        <li><a class="social-button" href="facebook.com">
+          <span class="visually-hidden">facebook.com</span>
+          <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+          </svg>
+        </a>
+        </li>
+        <li><a class="social-button" href="youtube.com">
+          <span class="visually-hidden">youtube.com</span>
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+          </svg>
+        </a>
+        </li>
       </ul>
       </section>
       <section class="footer-copyright">

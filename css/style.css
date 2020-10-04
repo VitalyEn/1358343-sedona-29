@@ -39,9 +39,22 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   height: 100%;
-  background-color: var(--extra-gray);
+
 }
 
 .page-body {
@@ -49,19 +62,22 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  background-color: var(--basic-white);
-  width: 1200px;
+  background-color: var(--extra-gray);
+  width: 1280px;
   margin: 0 auto;
 }
 
 .main-header {
-  margin-bottom: 70px;
-
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--basic-white);
 }
 
 .main-header-logo {
   justify-self: center;
-
+  position: absolute;
+  z-index: 2;
 }
 /* Main navigation */
 
@@ -70,7 +86,6 @@ img {
   width: 1200px;
   margin-bottom: 60px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .main-navigation {
@@ -85,14 +100,19 @@ img {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
-  width: 100%;
+  margin: 0;
+  width: 1200px;
+  height: 56px;
 }
 
 .site-navigation,
 .feature-list,
 .service-list,
+.small-item-list,
 .sort-list,
 .result-list {
   list-style: none;
@@ -101,8 +121,15 @@ img {
 
 }
 
+.site-navigation li {
+  margin-left: 72px;
+  margin-right: 72px;
+}
 .site-navigation a {
   color: var(--basic-black);
+  display: block;
+  text-align: center;
+  font-weight: 700;
 }
 
 .site-navigation a:hover,
@@ -115,19 +142,40 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
+  background-color: var(--basic-white);
+}
+
+.banner {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  height: 509px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner .welcome-sedona {
+  margin-top: 78px;
 }
 
 .sedona {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
+  height: 216px;
 }
 
-.sedona p {
-  width: 100%;
+.sedona .h2 {
+  width: 470px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
   text-align: center;
+  margin-top: 42px;
 }
 
 /* Features */
@@ -146,7 +194,11 @@ img {
 .feature-item {
   text-align: center;
   width: 100%;
-  
+}
+
+.feature-text {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
 }
 
 .feature-item-picture {
@@ -154,10 +206,19 @@ img {
 }
 .service-list {
     display: flex;
+    height: 330px;
+    align-items: center;
 }
 
-.small-item {
+.small-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: auto;
+  height: 256px;
+  background-color: var(--basic-gray);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .feature-item h3 {
@@ -167,10 +228,23 @@ img {
 
 .feedback {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-text {
+  display: block;
+  width: 435px;
+  height: 155px;
 }
 
 .feedback .h2 {
   font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  margin-top: 0;
 }
 /* Button */
 
@@ -185,12 +259,15 @@ img {
 }
 
 .find-button {
+  padding: 0;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  line-height: 26px;
-  text-align: center;
   width: 568px;
   height: 86px;
+  line-height: 26px;
+  font-size: 21px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .extra-button {
@@ -239,21 +316,32 @@ img {
 /* Main footer */
 
 .main-footer {
+  grid-row: -1/-1;
   color: var(--basic-black);
   background-color: var(--extra-black);
+  margin: 0 auto;
+  padding: 0;
+  height: 120px;
+  z-index: 2;
+  opacity: 0.9;
 }
 
 .main-footer .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-contacts {
+  margin-left: 111px;
   justify-self: center;
+  margin-top: 23px;
 }
 
 .footer-contacts a {
   color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .footer-contacts a:hover,
@@ -269,29 +357,36 @@ img {
 
 .footer-social {
   text-align: center;
-  width: 145px;
+  width: 180px;
   justify-self: center;
+  padding: 0;
 }
 
 .footer-copyright {
   display: flex;
   max-width: 200px;
   margin: 0;
-  justify-content: space-between;
+  margin-top: 38px;
+  margin-right: 138px;
 }
 
 .footer-social ul {
+  margin 0;
+  margin-top: 36px;
   list-style: none;
-}
-
-.footer-social h2 {
-  font-size: 14px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Social button */
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   color: inherit;
   background-color: var(--basic-blue);
 }
