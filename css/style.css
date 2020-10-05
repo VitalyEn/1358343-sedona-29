@@ -199,6 +199,9 @@ img {
 .feature-text {
   background-color: var(--basic-blue);
   color: var(--basic-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .feature-item-picture {
@@ -219,6 +222,21 @@ img {
   background-color: var(--basic-gray);
   margin-left: 0;
   margin-right: 0;
+}
+
+.small-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-item h3 {
+  max-width: 119px;
+}
+
+.small-item p {
+  max-width: 258px;
 }
 
 .feature-item h3 {
@@ -259,6 +277,7 @@ img {
 }
 
 .find-button {
+  box-sizing: border-box;
   padding: 0;
   color: var(--basic-white);
   background-color: var(--basic-brown);
@@ -318,7 +337,6 @@ img {
 .main-footer {
   grid-row: -1/-1;
   color: var(--basic-black);
-  background-color: var(--extra-black);
   margin: 0 auto;
   padding: 0;
   height: 120px;
@@ -326,13 +344,18 @@ img {
   opacity: 0.9;
 }
 
-.main-footer .container {
+.main-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 1200px;
+  background-color: var(--basic-white);
+  position: absolute;
+  top: 2670px;
+  left: 60px;
 }
 
 .footer-contacts {
-  margin-left: 111px;
+  margin-left: 0;
   justify-self: center;
   margin-top: 23px;
 }
@@ -356,27 +379,22 @@ img {
 }
 
 .footer-social {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 180px;
-  justify-self: center;
   padding: 0;
+  outline: 5px solid #ff0000;
+  margin 0;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .footer-copyright {
   display: flex;
+  align-items: center;
   max-width: 200px;
   margin: 0;
-  margin-top: 38px;
-  margin-right: 138px;
-}
-
-.footer-social ul {
-  margin 0;
-  margin-top: 36px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /* Social button */
