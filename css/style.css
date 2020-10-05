@@ -65,6 +65,7 @@ img {
   background-color: var(--extra-gray);
   width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-header {
@@ -201,7 +202,12 @@ img {
   color: var(--basic-white);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-text h3 {
+  max-width: 149px;
 }
 
 .feature-item-picture {
@@ -216,7 +222,7 @@ img {
 .small-item-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: auto;
   height: 256px;
   background-color: var(--basic-gray);
@@ -227,7 +233,7 @@ img {
 .small-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -258,11 +264,16 @@ img {
   height: 155px;
 }
 
+.feedback-text p {
+  margin: 0;
+}
+
 .feedback .h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 /* Button */
 
@@ -350,8 +361,8 @@ img {
   width: 1200px;
   background-color: var(--basic-white);
   position: absolute;
-  top: 2670px;
-  left: 60px;
+  top: -120px;
+  left: 40px;
 }
 
 .footer-contacts {
@@ -384,7 +395,6 @@ img {
   align-items: center;
   width: 180px;
   padding: 0;
-  outline: 5px solid #ff0000;
   margin 0;
   list-style: none;
   flex-wrap: wrap;
