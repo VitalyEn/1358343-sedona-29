@@ -171,7 +171,6 @@ img {
 
 .sedona .h2 {
   width: 470px;
-  height: 80px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -193,30 +192,50 @@ img {
 }
 
 .feature-item {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   width: 100%;
 }
 
 .feature-text {
-  background-color: var(--basic-blue);
   color: var(--basic-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
+  margin-right: 49px;
 }
 
 .feature-text h3 {
-  max-width: 149px;
+  max-width: 150px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-text p {
+  max-width: 301px;
 }
 
 .feature-item-picture {
   display: flex;
+  background-color: var(--basic-blue);
 }
+
 .service-list {
     display: flex;
+    justify-content: space-around;
     height: 330px;
     align-items: center;
+}
+
+.service-item h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.service-item p {
+  max-width: 297px;
 }
 
 .small-item-list {
