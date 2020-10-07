@@ -314,8 +314,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   height: 150px;
-  justify-content: space-around;
   align-items: center;
+  margin: 0;
   outline-offset: -5px;
   outline: 5px solid rgba(0, 0, 255, 0.7);
 }
@@ -323,8 +323,22 @@ img {
 .result-item img {
   order: -1;
   margin-left: 73px;
+  margin-right: 0;
 }
 
+.result-item-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 259px;
+  margin-left: 29px;
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+}
+
+.rate {
+  margin-left: 522px;
+}
 /* Button */
 
 .button {
@@ -354,12 +368,17 @@ img {
   border: none;
   color: var(--basic-white);
   background-color: var(--basic-blue);
+  width: 110px;
+  height: 27px;
+  margin-right: 6px;
 }
 
 .booking-button {
   border: none;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  width: 142px;
+  height: 27px;
 }
 
 .extra-button:hover,
