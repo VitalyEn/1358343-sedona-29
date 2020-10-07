@@ -295,6 +295,36 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
 }
+
+/*Hotels*/
+
+.filters {
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+}
+
+.result-item {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  justify-content: space-around;
+  align-items: center;
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+}
+
+.result-item img {
+  order: -1;
+  margin-left: 73px;
+}
+
 /* Button */
 
 .button {
@@ -385,6 +415,22 @@ img {
   left: 40px;
 }
 
+.hotels-footer {
+  grid-row: -1/-1;
+  color: var(--basic-black);
+  margin: 0 auto;
+  padding: 0;
+  height: 120px;
+  z-index: 2;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  background-color: var(--basic-white);
+  position: absolute;
+  top: 0px;
+  left: 40px;
+}
 .footer-contacts {
   margin-left: 0;
   justify-self: center;
