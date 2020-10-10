@@ -116,7 +116,9 @@ img {
 .service-list,
 .small-item-list,
 .sort-list,
-.result-list {
+.result-list,
+.hotel-filter-list-1,
+.hotel-filter-list-2 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -299,9 +301,127 @@ img {
 
 /*Hotels*/
 
-.filters {
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
+.filters form {
+  display: flex;
+  flex-direction: row;
+  height: 217px;
+  background-image: url(../img/background-filter.jpg);
+}
+
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+  margin-left: 72px;
+  margin-top: 26px;
+  border: none;
+}
+
+.filter-item-1 legend,
+.filter-item-2 legend,
+.filter-price legend {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.filter-option {
+  margin-bottom: 25px;
+  padding-left: 45px;
+  color: var(--basic-white);
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--basic-white);
+  border-radius: 15%;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -37px;
+  width: 22px;
+  height: 17px;
+  background-image: url(../img/bird.svg);
+  box-shadow: 2px blue;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 10px;
+}
+
+.range-controls {
+  margin-top: 20px;
+  position: relative;
+}
+
+.range-controls .scale {
+  width: 316px;
+  height: 2px;
+  background-color: var(--basic-white);
+  opacity: 30%;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 248px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .results {
@@ -310,11 +430,27 @@ img {
 }
 
 .sort {
+  margin-top: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 73px;
+}
+
+.sort p {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort h3 {
+  margin-left: 46px;
 }
 
 .sort-list {
+  margin-left: 40px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
