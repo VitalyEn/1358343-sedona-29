@@ -7,6 +7,7 @@
   --basic-gray: #eeeeee;
   --extra-gray: #888888;
   --border-gray: #e5e5e5;
+  --sort-gray: #cacaca;
   --light-gray: #f2f2f2;
   --extra-black: rgba(255,255,255,0.9);
   --extra-blue-hover: #669ec0;
@@ -453,7 +454,7 @@ img {
 
 .sort-list {
   margin-left: 40px;
-  width: 240px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -488,13 +489,25 @@ img {
   display: flex;
   width: 34px;
   justify-content: space-between;
-  margin-left: 503px;
+  margin-left: 500px;
 }
 
-.sort-item-up,
-.sort-item-down {
+.sort-item-ud {
   width: 11px;
   height: 11px;
+}
+
+.sort-item-ud path {
+  fill: var(--sort-gray);
+}
+
+.sort-item-ud:hover path {
+  fill: var(--basic-black);
+}
+
+.sort-item-ud:active path,
+.sort-item-ud:focus path {
+  fill: var(--basic-blue);
 }
 
 .result-item {
@@ -525,6 +538,19 @@ img {
 
 .result-item-text h3 {
   margin: 0;
+}
+
+.result-item-link {
+  color: var(--basic-black);
+}
+
+.result-item-link:hover {
+  color: var(--basic-blue);
+}
+
+.result-item-link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .hotel-price {
@@ -695,6 +721,7 @@ img {
   margin-left: 0;
   justify-self: center;
   margin-top: 23px;
+  text-align: center;
 }
 
 .footer-contacts a {
