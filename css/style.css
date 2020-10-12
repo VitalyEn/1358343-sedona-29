@@ -117,6 +117,7 @@ img {
 .service-list,
 .small-item-list,
 .sort-list,
+.sort-list-2,
 .result-list,
 .hotel-filter-list-1,
 .hotel-filter-list-2,
@@ -452,10 +453,48 @@ img {
 
 .sort-list {
   margin-left: 40px;
-  width: 300px;
+  width: 240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.sort-item-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sort-item-link:hover {
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+.sort-item-link:active {
+  color: var(--basic-black);
+  opacity: 1;
+  border: 0;
+}
+
+.sort-item-link:focus {
+  color: var(--basic-blue);
+  opacity: 1;
+  border: 0;
+}
+
+.sort-list-2 {
+  display: flex;
+  width: 34px;
+  justify-content: space-between;
+  margin-left: 503px;
+}
+
+.sort-item-up,
+.sort-item-down {
+  width: 11px;
+  height: 11px;
 }
 
 .result-item {
