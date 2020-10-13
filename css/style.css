@@ -365,8 +365,16 @@ img {
   box-shadow: 2px blue;
 }
 
+.filter-price {
+  display: flex;
+  flex-direction: column;
+  margin-left: 360px;
+  align-items: center;
+}
+
 .range-filter {
-  width: 260px;
+  display: block;
+  width: 317px;
   margin-top: 10px;
 }
 
@@ -379,7 +387,6 @@ img {
   width: 316px;
   height: 2px;
   background-color: var(--basic-white);
-  opacity: 30%;
 }
 
 .range-controls .bar {
@@ -410,20 +417,41 @@ img {
   left: 248px;
 }
 
-.price-controls {
+.filter-price {
   display: flex;
-  justify-content: space-between;
+}
+
+.filter-price legend{
+  align-self: flex-start;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.price-controls {
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--basic-white);
+  box-sizing: border-box;
+  border: solid 2px var(--basic-white);
+  border-radius: 2px;
+}
+
+.min-price {
+  margin-left: 52px;
+  margin-right: 0;
+  border-right: solid 2px var(--basic-white);
 }
 
 .price-controls input {
   width: 60px;
-  padding: 10px;
-  margin-left: 10px;
-  text-align: center;
-  color: #283136;
+  padding:;
+  margin-left: 0;
+  text-align: left;
+  color: var(--basic-white);
   border: none;
-  border-radius: 5px;
-  background: #f1f1f1;
+  background: transparent;
   font-family: inherit;
   font-size: inherit;
 }
@@ -489,7 +517,7 @@ img {
   display: flex;
   width: 34px;
   justify-content: space-between;
-  margin-left: 500px;
+  margin-left: 465px;
 }
 
 .sort-item-ud {
@@ -616,6 +644,18 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-white);
   border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-button {
+  margin-top: 33px;
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--basic-white);
 }
 
 .find-button {
@@ -629,6 +669,14 @@ img {
   font-size: 21px;
   text-align: center;
   padding-top: 30px;
+}
+
+.find-button:hover {
+  background-color: var(--extra-brown-hover);
+}
+
+.find-button:active {
+  background-color: var(--extra-brown-active);
 }
 
 .extra-button {
