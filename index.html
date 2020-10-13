@@ -150,5 +150,37 @@
       <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип академии"></a>
       </section>
     </footer>
+
+
+    <section class="modal">
+      <h2 class="visually-hidden">Поиск гостинницы в Седоне</h2>
+      <form class="find-form" action="https://echo.htmlacademy.ru">
+        <div class="modal-container">
+        <div class="date">
+          <label class="date-label" for="date-in-id">Дата заезда:</label>
+          <input class="date-num" type="date" id="date-in-id" name="date-in-name" value="24 апреля 2017">
+        </div>
+        <div class="date">
+          <label class="date-label" for="date-out-id">Дата выезда:</label>
+          <input class="date-num" type="date" id="date-out-id" name="date-out-name" value="4 июля 2017">
+        </div>
+        <div class="persons">
+          <label>Взрослые:</label>
+          <div class="adult">
+            <button type="button" class="button">-</button>
+            <input type="number" value="2">
+            <button type="button" class="button">+</button>
+          </div>
+          <label>Дети:</label>
+          <div class="children">
+            <button type="button" class="button">-</button>
+            <input type="number" value="0">
+            <button type="button" class="button">+</button>
+          </div>
+        </div>
+        <button type="button" class="button find-hotel-button">Найти</button>
+      </div>
+      </form>
+    </section>
   </body>
 </html>
