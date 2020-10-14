@@ -9,6 +9,8 @@
   --border-gray: #e5e5e5;
   --sort-gray: #cacaca;
   --light-gray: #f2f2f2;
+  --dark-gray: #a9a9a9;
+  --academy-gray: #bdbbbc;
   --extra-black: rgba(255,255,255,0.9);
   --extra-blue-hover: #669ec0;
   --extra-blue-active: #5496bd;
@@ -808,6 +810,17 @@ img {
   margin: 0;
 }
 
+.footer-copyright p {
+  margin-right: 10px;
+}
+
+.copyright-button:hover path {
+  fill: var(--basic-blue);
+}
+
+.copyright-button:active path {
+  fill: var(--academy-gray);
+}
 /* Social button */
 
 .social-button {
@@ -864,6 +877,20 @@ img {
   height: 38px;
   background-color: var(--light-gray);
   border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 13px;
+}
+
+.date-in-button,
+.date-out-button {
+  position: absolute;
+  right: 64px;
+  background-color: var(--light-gray);
+  background-image: url("../img/calendar.svg");
+  width: 21px;
+  height: 23px;
 }
 
 .find-hotel-button {
@@ -879,11 +906,40 @@ img {
 .persons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .adult,
 .children {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 114px;
   height: 38px;
   background-color: var(--light-gray);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.adult-input,
+.children-input {
+  width: 36px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+.adult-button,
+.children-button {
+  color: var(--dark-gray);
+  font-size: 24px;
+  background: transparent;
 }
