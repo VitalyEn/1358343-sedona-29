@@ -10,6 +10,7 @@
   --sort-gray: #cacaca;
   --light-gray: #f2f2f2;
   --dark-gray: #a9a9a9;
+  --gray-hover: #ebebeb;
   --academy-gray: #bdbbbc;
   --extra-black: rgba(255,255,255,0.9);
   --extra-blue-hover: #669ec0;
@@ -411,6 +412,12 @@ img {
   cursor: pointer;
 }
 
+.toggle:hover {
+  width: 5px;
+  height: 5px;
+  border-width: 9px;
+}
+
 .range-controls .toggle-min {
   left: 0px;
 }
@@ -660,7 +667,7 @@ img {
   color: var(--basic-white);
 }
 
-.filter-button:hover { 
+.filter-button:hover {
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
@@ -889,14 +896,47 @@ img {
   text-transform: uppercase;
 }
 
+.date-num:hover {
+  background-color: var(--gray-hover);
+}
+
+.date-num:focus {
+  background-color: var(--basic-white);
+  outline: none;
+  border: 2px solid var(--border-gray);
+}
+
 .date-in-button,
 .date-out-button {
+  padding: 0;
+  margin: 0;
   position: absolute;
   right: 64px;
   background-color: var(--light-gray);
-  background-image: url("../img/calendar.svg");
   width: 21px;
   height: 23px;
+}
+
+.date-in-button:hover path,
+.date-out-button:hover path {
+  background-color: transparent;
+  fill: var(--basic-black);
+}
+
+.date-in-button:active path,
+.date-out-button:active path {
+  background-color: transparent;
+  fill: var(--basic-blue);
+}
+
+.adult-button:hover,
+.children-button:hover {
+  color: var(--basic-black);
+}
+
+.adult-button:active,
+.children-button:active {
+  color: var(--basic-blue);
 }
 
 .find-hotel-button {
@@ -907,6 +947,14 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.find-hotel-button:hover {
+  background-color: var(--extra-blue-hover);
+}
+
+.find-hotel-button:active {
+  background-color: var(--extra-blue-active);
 }
 
 .persons {
@@ -931,7 +979,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.input[type='number']{
+input[type='number']{
   -moz-appearance:textfield;
 }
 
