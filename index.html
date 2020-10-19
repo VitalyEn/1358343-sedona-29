@@ -157,7 +157,7 @@
     </footer>
 
 
-    <section class="modal">
+    <section class="modal modal-show">
       <h2 class="visually-hidden">Поиск гостинницы в Седоне</h2>
       <form class="find-form" action="https://echo.htmlacademy.ru">
         <div class="modal-container">
@@ -184,16 +184,16 @@
           </button>
         </div>
         <div class="persons">
-          <label>Взрослые:</label>
+          <label for="adult-input">Взрослые:</label>
           <div class="adult">
             <button type="button" class="button adult-button" aria-label="Убавить количество">&ndash;</button>
-            <input type="number" class="adult-input" value="2">
+            <input type="number" class="adult-input" id="adult-input" name="adult" value="2">
             <button type="button" class="button adult-button" aria-label="Добавить количество">+</button>
           </div>
-          <label>Дети:</label>
+          <label for="children-input">Дети:</label>
           <div class="children">
             <button type="button" class="button children-button" aria-label="Убавить количество">&ndash;</button>
-            <input type="number" class="children-input" value="0">
+            <input type="number" class="children-input" id="children-input" name="children" value="0">
             <button type="button" class="button children-button" aria-label="Добавить количество">+</button>
           </div>
         </div>
