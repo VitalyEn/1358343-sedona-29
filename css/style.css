@@ -904,10 +904,12 @@ img {
   line-height: 26px;
   padding-left: 13px;
   text-transform: uppercase;
+  border: 2px solid var(--light-gray);
 }
 
 .date-num:hover {
   background-color: var(--gray-hover);
+  border: 2px solid var(--border-gray);
 }
 
 .date-num:focus {
@@ -922,20 +924,18 @@ img {
   margin: 0;
   position: absolute;
   right: 64px;
-  background-color: var(--light-gray);
+  background-color: transparent;
   width: 21px;
   height: 23px;
 }
 
 .date-in-button:hover path,
 .date-out-button:hover path {
-  background-color: transparent;
   fill: var(--basic-black);
 }
 
 .date-in-button:active path,
 .date-out-button:active path {
-  background-color: transparent;
   fill: var(--basic-blue);
 }
 
@@ -1014,11 +1014,11 @@ input[type='number']{
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-100px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
 
   90% {

@@ -2,6 +2,8 @@ const findButton = document.querySelector(".find-button");
 const findPopup = document.querySelector(".modal");
 const dateIn = findPopup.querySelector("#date-in-id");
 const dateOut = findPopup.querySelector("#date-out-id");
+const adult = findPopup.querySelector(".adult-input");
+const children = findPopup.querySelector(".children-input");
 const findForm = findPopup.querySelector(".find-form");
 
 findButton.addEventListener("click", function (evt) {
@@ -11,9 +13,9 @@ findButton.addEventListener("click", function (evt) {
 });
 
 findForm.addEventListener("submit", function (evt) {
-  if (!dateIn.value || !dateOut.value){
+  if (!dateIn.value || !dateOut.value || (!adult.value || adult.value == 0) || !children.value){
     evt.preventDefault();
-    findPopup.classList.add("modal-error");
+    findPopup.classList.remove("modal-error");
     findPopup.offsetWidth = findPopup.offsetWidth;
     findPopup.classList.add("modal-error");
   }
