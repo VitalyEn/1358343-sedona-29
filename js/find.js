@@ -6,6 +6,7 @@ const adult = findPopup.querySelector(".adult-input");
 const children = findPopup.querySelector(".children-input");
 const findForm = findPopup.querySelector(".find-form");
 
+findPopup.classList.remove("modal-show");
 findButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   findPopup.classList.toggle("modal-show");

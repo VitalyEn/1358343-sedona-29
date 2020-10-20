@@ -306,6 +306,11 @@ img {
   margin-bottom: 30px;
 }
 
+.map {
+  width: 1199px;
+  height: 594px;
+  background-image: url("../img/map.jpg");
+}
 /*Hotels*/
 
 .filters form {
