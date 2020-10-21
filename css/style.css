@@ -180,20 +180,23 @@ img {
 }
 
 .sedona .h2 {
+  display: block;
+  height: 80px;
   width: 470px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   margin-top: 42px;
+  margin-bottom: 16px;
 }
 
+.sedona p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 /* Features */
-
-.features {
-  margin-bottom: 80px;
-
-}
 
 .feature-list {
   display: flex;
@@ -212,19 +215,28 @@ img {
   color: var(--basic-white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-left: 50px;
   margin-right: 49px;
+  padding-bottom: 54px;
 }
 
 .feature-text h3 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 47px;
+  margin-bottom: 5px;
   max-width: 150px;
   font-size: 21px;
   line-height: 21px;
 }
 
 .feature-text p {
+  display: block;
+  margin: 0;
+  padding: 0;
   max-width: 301px;
 }
 
@@ -241,7 +253,21 @@ img {
     width: 100%;
 }
 
+.service-item {
+  height: 330px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
 .service-item h4 {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
   font-size: 21px;
   line-height: 21px;
 }
@@ -263,16 +289,22 @@ img {
 .small-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 
 .small-item h3 {
+  margin: 0;
+  padding: 0;
   max-width: 119px;
 }
 
 .small-item p {
-  max-width: 258px;
+  margin: 0;
+  padding: 0;
+  max-width: 265px;
 }
 
 .feature-item h3 {
@@ -289,13 +321,16 @@ img {
 }
 
 .feedback-text {
+  margin-top: 56px;
   display: block;
   width: 435px;
-  height: 155px;
+  height: 148px;
 }
 
 .feedback-text p {
   margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
 }
 
 .feedback .h2 {
@@ -323,9 +358,16 @@ img {
 .filters fieldset {
   padding: 0;
   margin: 0;
-  margin-left: 72px;
   margin-top: 26px;
   border: none;
+}
+
+.filters .filter-item-1 {
+  margin-left: 72px;
+}
+
+.filters .filter-item-2 {
+  margin-left: 119px;
 }
 
 .filter-item-1 legend,
@@ -340,7 +382,7 @@ img {
 
 .filter-option {
   margin-bottom: 25px;
-  padding-left: 45px;
+  padding-left: 40px;
   color: var(--basic-white);
 }
 
@@ -354,10 +396,10 @@ img {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -40px;
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   border: 3px solid var(--basic-white);
   border-radius: 15%;
 }
@@ -375,7 +417,7 @@ img {
 .filter-price {
   display: flex;
   flex-direction: column;
-  margin-left: 360px;
+  margin-left: 345px;
   align-items: center;
 }
 
@@ -557,7 +599,7 @@ img {
   align-items: center;
   margin: 0;
   border-top: 1px solid var(--border-gray);
-  
+
 }
 
 .result-item img {
@@ -758,7 +800,7 @@ img {
 
 .main-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 1200px;
   background-color: var(--basic-white);
   position: absolute;
@@ -782,18 +824,21 @@ img {
   top: 0px;
   left: 40px;
 }
+
 .footer-contacts {
-  margin-left: 0;
+  margin-left: 125px;
   justify-self: center;
   margin-top: 23px;
   text-align: center;
 }
 
 .footer-contacts a {
+  display: block;
   color: var(--basic-black);
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .footer-contacts a:hover,
@@ -809,11 +854,12 @@ img {
 
 .footer-social {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 180px;
+  width: 150px;
   padding: 0;
   margin: 0;
+  margin-left: -9px;
   list-style: none;
   flex-wrap: wrap;
 }
@@ -823,6 +869,7 @@ img {
   align-items: center;
   max-width: 200px;
   margin: 0;
+  margin-right: 138px;
 }
 
 .footer-copyright p {
@@ -860,7 +907,7 @@ img {
   width: 568px;
   height: 395px;
   left: 356px;
-  top: 2200px;
+  top: 2170px;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   font-weight: 700;
