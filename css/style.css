@@ -23,7 +23,7 @@
 /* Global */
 
 body {
-  min-width: 1280px;
+  width: 1280px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -176,7 +176,7 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  height: 216px;
+  padding-bottom: 55px;
 }
 
 .sedona .h2 {
@@ -247,6 +247,7 @@ img {
 
 .service-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     height: 330px;
     align-items: center;
@@ -518,6 +519,7 @@ img {
 .sort {
   margin-top: 0;
   padding: 0;
+  height: 86px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -531,12 +533,14 @@ img {
 }
 
 .sort h3 {
+  font-size: 12px;
+  line-height: 18px;
   margin-left: 46px;
 }
 
 .sort-list {
   margin-left: 40px;
-  width: 250px;
+  width: 240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -571,7 +575,7 @@ img {
   display: flex;
   width: 34px;
   justify-content: space-between;
-  margin-left: 465px;
+  margin-left: 502px;
 }
 
 .sort-item-ud {
@@ -613,9 +617,10 @@ img {
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 90px;
+  height: 100px;
   width: 259px;
   margin-left: 29px;
+  padding-bottom: 8px;
 }
 
 .result-item-text h3 {
@@ -623,6 +628,8 @@ img {
 }
 
 .result-item-link {
+  font-size: 21px;
+  line-height: 26px;
   color: var(--basic-black);
 }
 
@@ -638,6 +645,7 @@ img {
 .hotel-price {
   margin: 0;
   height: 21px;
+  padding-bottom: 5px;
   display: flex;
   width: 100%;
 }
@@ -679,13 +687,14 @@ img {
 }
 
 .rate p {
+  display: block;
   width: 110px;
   height: 27px;
   background-color: var(--light-gray);
   text-align: center;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 /* Button */
@@ -816,11 +825,6 @@ img {
   height: 120px;
   z-index: 2;
   opacity: 0.9;
-  display: flex;
-  justify-content: space-around;
-  width: 1200px;
-  background-color: var(--basic-white);
-  position: absolute;
   top: 0px;
   left: 40px;
 }
