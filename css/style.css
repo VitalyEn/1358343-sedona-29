@@ -23,7 +23,6 @@
 /* Global */
 
 body {
-  width: 1280px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -107,7 +106,6 @@ img {
 
 .site-navigation {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -115,6 +113,7 @@ img {
   width: 1200px;
   height: 56px;
 }
+
 
 .site-navigation,
 .feature-list,
@@ -133,9 +132,24 @@ img {
 }
 
 .site-navigation li {
-  margin-left: 72px;
-  margin-right: 72px;
+  margin: 0;
+  padding: 0;
 }
+
+.site-navigation li:first-child {
+  margin-left: 72px;
+  margin-right: 10px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 300px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 72px;
+  margin-left: 20px;
+}
+
 .site-navigation a {
   color: var(--basic-black);
   display: block;
@@ -353,7 +367,7 @@ img {
   display: flex;
   flex-direction: row;
   height: 217px;
-  background-image: url(../img/background-filter.jpg);
+  background-image: url("../img/background-filter.jpg");
 }
 
 .filters fieldset {
@@ -412,7 +426,7 @@ img {
   left: -37px;
   width: 22px;
   height: 17px;
-  background-image: url(../img/bird.svg);
+  background-image: url("../img/bird.svg");
 }
 
 .filter-price {
@@ -708,7 +722,6 @@ img {
   background-color: var(--basic-white);
   border: none;
   cursor: pointer;
-  outline: none;
 }
 
 .filter-button {
