@@ -5,6 +5,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/stylemin.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -42,15 +43,15 @@
             <ul class="hotel-filter-list-1">
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
-                <label for="filter-pool">Бассейн</label>
+                <label for="filter-pool" tabindex="0">Бассейн</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
-                <label for="filter-parking">Парковка</label>
+                <label for="filter-parking" tabindex="0">Парковка</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wifi" id="filter-wifi">
-                <label for="filter-wifi">WI-FI</label>
+                <label for="filter-wifi" tabindex="0">WI-FI</label>
               </li>
             </ul>
           </fieldset>
@@ -59,15 +60,15 @@
             <ul class="hotel-filter-list-2">
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
-                <label for="filter-hotel">Гостиница</label>
+                <label for="filter-hotel" tabindex="0">Гостиница</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
-                <label for="filter-motel">Мотель</label>
+                <label for="filter-motel" tabindex="0">Мотель</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
-                <label for="filter-apartments">Апартаменты</label>
+                <label for="filter-apartments" tabindex="0">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -106,7 +107,7 @@
           <h3>Сортировка:</h3>
           <ul class="sort-list">
             <li class="sort-item">
-              <a class="sort-item-link" href="#">По цене</a>
+              <a class="sort-item-link active-sort" href="#">По цене</a>
             </li>
             <li class="sort-item">
               <a class="sort-item-link" href="#">По типу</a>
