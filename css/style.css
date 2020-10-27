@@ -197,6 +197,10 @@ img {
   font-weight: 700;
 }
 
+.site-navigation .page-active {
+  color: var(--basic-brown);
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: var(--basic-blue);
@@ -1173,7 +1177,7 @@ img {
   width: 568px;
   height: 395px;
   left: 315px;
-  top: 2168px;
+  top: 2170px;
   background-color: var(--basic-white);
   -webkit-box-shadow: 0px 7px 15px var(--page-shadow);
           box-shadow: 0px 7px 15px var(--page-shadow);
@@ -1322,6 +1326,13 @@ img {
           align-items: center;
 }
 
+.children-label {
+  margin-left: 30px;
+}
+
+.adult {
+  margin-left: 20px;
+}
 .adult,
 .children {
   display: -webkit-box;
