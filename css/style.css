@@ -1220,6 +1220,7 @@ img {
 }
 
 .date {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1231,7 +1232,8 @@ img {
 }
 
 .date:first-child {
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: -4px;
 }
 
 .date-label {
@@ -1247,7 +1249,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
-  padding-left: 13px;
+  padding-left: 10px;
   text-transform: uppercase;
   border: 2px solid var(--light-gray);
 }
@@ -1379,6 +1381,22 @@ img {
   color: var(--dark-gray);
   font-size: 24px;
   background: transparent;
+}
+
+.adult .minus {
+  margin-left: 5px;
+}
+
+.adult .plus {
+  margin-right: 10px;
+}
+
+.children .minus {
+  margin-left: 5px;
+}
+
+.children .plus {
+  margin-right: 5px;
 }
 
 @-webkit-keyframes bounce {
